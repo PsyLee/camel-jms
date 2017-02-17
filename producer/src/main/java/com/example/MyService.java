@@ -11,7 +11,7 @@ interface MyListener {
 @Service
 public class MyService {
 
-    @Produce(uri = "jms:myTest")
+    @Produce(uri = "jms:somepath")
     MyListener myListener;
 
     @HystrixCommand(fallbackMethod = "sendMessageFallback")
